@@ -1,0 +1,51 @@
+{
+  "latency": 0,
+  "name": "Example Mock API",
+  "endpointPrefix": "",
+  "port": 3000,
+  "uuid": "mockoon-instance-uuid",
+  "lastMigration": 1,
+  "routes": [
+    {
+      "uuid": "route-2-uuid",
+      "documentation": "Get a list of products",
+      "method": "GET",
+      "endpoint": "/api/forum/:id",
+      "body": "{\n    \"message\": \"Info retrieved\",\n    \"data\": {\n        \"forum_info\": {\n            \"id\": 100001,\n            \"uuid\": \"6b756c9d-48d6-4ef3-8e78-2b0faf6aaa59\",\n            \"forum_name\": \"Company 1 Forum 1\",\n            \"meeting_day\": \"Monday\",\n            \"meeting_time\": \"10:00:00\",\n            \"is_active\": true,\n            \"company_info\": {\n                \"uuid\": \"a55e8601-1f92-4d4a-9320-5596e7c059d2\",\n                \"company_name\": \"Company 1\"\n            },\n            \"user_info\": [\n                {\n                    \"uuid\": \"ea8b7dc6-32e6-44ed-a534-0f51c11f14d8\",\n                    \"first_name\": \"Cpy1fn1\",\n                    \"last_name\": \"Com1ln1\"\n                },\n                {\n                    \"uuid\": \"3194a1f4-3438-4007-9fdc-7284d52f65a1\",\n                    \"first_name\": \"Cpy1fn2\",\n                    \"last_name\": \"Com1ln2\"\n                },\n                {\n                    \"uuid\": \"caff73c3-39e4-4f05-8f00-40f2818b65df\",\n                    \"first_name\": \"Cpy1fn3\",\n                    \"last_name\": \"Com1ln3\"\n                },\n                {\n                    \"uuid\": \"0a542c2b-004c-4d5a-b7e7-dfb0292ca21c\",\n                    \"first_name\": \"Cpy1fn4\",\n                    \"last_name\": \"Com1ln4\"\n                },\n                {\n                    \"uuid\": \"aa05a364-c17d-452b-b0b9-79474b2a7e6b\",\n                    \"first_name\": \"Cpy1fn5\",\n                    \"last_name\": \"Com1ln5\"\n                },\n                {\n                    \"uuid\": \"0ff85fbe-1347-4d31-b110-84baacff7945\",\n                    \"first_name\": \"company1\",\n                    \"last_name\": \"User2\"\n                }\n            ],\n            \"course_info\": {\n                \"uuid\": \"ecdf259f-2450-4909-86fc-38f751bd4a21\",\n                \"name\": \"Course 1\"\n            },\n            \"chapter_info\": {\n                \"uuid\": \"6a4f1c3a-f2f8-4744-90bb-38a5f6b6c04d\",\n                \"name\": \"Course 1 Chapter 1\"\n            },\n            \"starting_date\": \"2024-08-29T00:00:00.000Z\",\n            \"createdAt\": \"2024-08-29T17:57:19.217Z\",\n            \"updatedAt\": \"2024-08-29T17:57:19.217Z\"\n        }\n    }\n}",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "responses": [
+        {
+          "uuid": "response-2-uuid",
+          "statusCode": 200
+        }
+      ],
+      "enabled": true,
+      "type": "http"
+    },
+    {
+      "uuid": "route-3-uuid",
+      "method": "POST",
+      "endpoint": "/api/products",
+      "responses": [
+        {
+          "uuid": "response-3-uuid",
+          "statusCode": 201,
+          "body": {
+            "message": "Product created successfully!"
+          },
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

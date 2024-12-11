@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  mockoon:
+    image: mockoon/cli:latest
+    container_name: mockoon_service
+    volumes:
+      - ./data/mockoon-data.json:/data/mockoon-data.json:ro
+    ports:
+      - "3000:3000"
+    command: --data /data/mockoon-data.json --port 3000
